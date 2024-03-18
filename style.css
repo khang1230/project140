@@ -1,0 +1,42 @@
+.mainDiv {
+    width: 100%;
+    text-align: left;
+}
+
+.mainDiv h3 {
+    display: inline;
+}
+
+.mainDiv button {
+    float: right;
+    border-color: white;
+}
+
+.playBtn {
+    width: 200px;
+    height: 45px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.restartBtn {
+    width: 200px;
+    height: 45px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.modalInstructions {
+    margin-top: 10px;
+}
+
+.footNote {
+    bottom: 0;
+    position: fixed;
+    background-color: rgb(211, 211, 211);
+    width: 100%;
+    font-size: 18px;
+    text-shadow: 5px 5px 5px;
+    padding-top: 3px;
+}

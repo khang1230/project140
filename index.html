@@ -1,0 +1,61 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ping Pong</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+
+</head>
+
+<body background="background1.jpg">
+    <center>
+        <div class="btn btn-warning mainDiv">
+            <h3>Ping Pong Game</h3>
+            <button class="btn btn-warning" data-toggle="modal" data-target="#MyModal">Instructions</button>
+        </div><br><br>
+        <button class="btn-success playBtn" onclick="start()">Play</button><br>
+        <button class="btn-info restartBtn" onclick="restart()">Restart</button>><br><br>
+ 
+        <h3 id="status" class="btn btn-danger"></h3><br><br>
+
+        <div id="canvas"></div>><br><br>
+
+        <div id="gameConsole"></div><br><br>
+
+        <div class="footNote"><p>Game Creator: Khang Vu</p></div>
+
+        <div id="MyModal"class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button class="close" data-dismiss="modal">&times;</button>
+                  <h4>Instructions</h4>
+                  
+                </div>
+                <div class="modal-body">
+                  <ol style="text-align: left;">
+                    <li class="modalInstructions">Move the mouse to adjust the paddle</li>
+                    <li class="modalInstructions">Each time you hit the ball, your speed will increase</li>
+                    <li class="modalInstructions">Each time you hit the ball you get a point</li>
+                    <li class="modalInstructions">If the ball hits your side, the computer gets a point</li>  
+                    <li class="modalInstructions">When the computer gets 4 points, you lose</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+    </center>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
